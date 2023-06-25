@@ -8,7 +8,7 @@ let papeeteTime = papeeteElement.querySelector(".time");
 
 
 papeeteDate.innerHTML = moment().format("dddd DD of MMMM, YYYY  ");
-papeeteTime.innerHTML = moment().tz("Oceania/Papeete").format("hh:mm:ss [<small>A<small>]");
+papeeteTime.innerHTML = moment().tz("Pacific/Tahiti").format("hh:mm:ss [<small>A<small>]");
 
 
 
@@ -33,7 +33,7 @@ let newdelhiTime = newdelhiElement.querySelector(".time");
 
 
 newdelhiDate.innerHTML = moment().format("dddd DD of MMMM, YYYY  ");
-newdelhiTime.innerHTML = moment().tz("Asia/NewDelhi").format("hh:mm:ss [<small>A<small>]");
+newdelhiTime.innerHTML = moment().tz("Asia/Colombo").format("hh:mm:ss [<small>A<small>]");
 
 }
 setInterval (upDatetimeanddate, 1000);
