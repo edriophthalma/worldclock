@@ -36,4 +36,21 @@ newdelhiDate.innerHTML = moment().format("dddd DD of MMMM, YYYY  ");
 newdelhiTime.innerHTML = moment().tz("Asia/Colombo").format("hh:mm:ss [<small>A<small>]");
 
 }
-setInterval (upDatetimeanddate, 1000);
+setInterval(upDatetimeanddate, 1000);
+function updateCity(event) {
+    let cityTimeZone = event.target.value;
+    let cityName = cityTimeZone.replace;
+    let cityTime = moment().tz(cityTimeZone);
+    let cityElement = document.querySelector("#cities");
+    cityElement.innerHTML = `<div class="city">
+        <div>
+        <h2>${cityName}</h2>
+    
+    <div class="date">${cityTime.format("dddd DD of MMMM, YYYY  ")}</div></div>
+    <div class="time">${cityTime.format("hh:mm:ss A")}</div></div>`;}
+
+
+
+
+let citySelectElemente = document.querySelector("#city");
+citySelectElement.addEventListener("change", updateCity); 
