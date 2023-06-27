@@ -1,7 +1,7 @@
 body {
 
     background-color: #00ffffaa;
-   
+    margin-top: 5%;
 }
 h1,footer {
     text-align: center;
@@ -19,6 +19,7 @@ max-width: 500px;
 display: block;
 text-align: center;
 margin: 0 auto;
+
 box-shadow: rgba(17, 12, 46, 0.381) 0px 48px 100px 0px;
 border-radius: 30px;
 padding: 2%;
