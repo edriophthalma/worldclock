@@ -9,7 +9,9 @@ h1,footer {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-
+a {
+    color: black;
+}
 
 .container {
 background-color: white;
@@ -31,10 +33,14 @@ select {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 100%;
     border-color: aqua;
+    
+    
 
    
     
 }
+
+
 
 
 .city {
