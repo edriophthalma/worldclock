@@ -35,11 +35,14 @@ let newdelhiTime = newdelhiElement.querySelector(".time");
 newdelhiDate.innerHTML = moment().format("dddd DD of MMMM, YYYY  ");
 newdelhiTime.innerHTML = moment().tz("Asia/Colombo").format("hh:mm:ss [<small>A<small>]");
 
+
 }
-setInterval(upDatetimeanddate, 1000);
 
 function updateCity(event) {
     let cityTimeZone = event.target.value;
+    if (cityTimeZone === "current") {
+        cityTimeZone = moment.tz.guess();
+    }
     let cityName = cityTimeZone.split("/")[1];
     let cityTime = moment().tz(cityTimeZone);
     let cityElement = document.querySelector(".cities");
@@ -54,7 +57,7 @@ function updateCity(event) {
     </div>`;}
 
 
-
+setInterval(upDatetimeanddate, 1000);
 
 let citySelectElement = document.querySelector("#city");
 citySelectElement.addEventListener("change", updateCity); 
